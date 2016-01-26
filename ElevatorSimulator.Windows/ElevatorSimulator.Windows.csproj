@@ -41,6 +41,13 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\MainMenuScreen.cs" />
+    <Compile Include="Screens\ScreenManager.cs" />
+    <Compile Include="Screens\Ui\Button.cs" />
+    <Compile Include="Screens\Ui\Container.cs" />
+    <Compile Include="Screens\Ui\Label.cs" />
+    <Compile Include="Screens\Ui\List.cs" />
+    <Compile Include="Screens\Ui\UiComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
