@@ -50,7 +50,7 @@ namespace ElevatorSimulator
 
             spriteBatch.Begin();
             Screens.ScreenManager.Draw(spriteBatch);
-            if(InputManager.Mode == InputManager.InputMode.Mouse)
+            if(InputManager.Mode == InputMode.Mouse)
             {
                 spriteBatch.DrawString(Screens.Ui.FontManager.MenuFont, "x", new Vector2(InputManager.CurrentMouseState.X - 10, InputManager.CurrentMouseState.Y - 10), Color.White);
             }

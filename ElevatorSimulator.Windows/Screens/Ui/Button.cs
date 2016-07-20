@@ -98,7 +98,7 @@ namespace ElevatorSimulator.Screens.Ui
 
         public void Update(GameTime gameTime)
         {
-            if(InputManager.Mode == InputManager.InputMode.Mouse && State != ButtonState.Disabled)
+            if(InputManager.Mode == InputMode.Mouse && State != ButtonState.Disabled)
             {
                 if(GetBounds().Contains(InputManager.CurrentMouseState.Position)) // TODO: Calculate correct Width
                 {

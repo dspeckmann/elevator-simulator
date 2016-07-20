@@ -6,6 +6,9 @@ using System.Text;
 
 namespace ElevatorSimulator.Screens
 {
+    // TODO: Add "Change Savegame" button in main menu
+    // TODO: When "Continue Game" is clicked pass savegame ID or whatever to LoadScreen, which then loads it along with sprites & stuff
+    // TODO: LoadScreen then passes the date to CareerScreen which then passes it to all subsequent screens ("Day" screen, "Buy" screen, etc)
     class MainMenuScreen : Screen
     {
         public MainMenuScreen() : base()
