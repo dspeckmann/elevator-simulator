@@ -23,6 +23,9 @@ namespace ElevatorSimulator
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            Screens.Ui.FontManager.LoadContent(Content);
+            Screens.ScreenManager.PushScreen(new Screens.MainMenuScreen());
         }
         
         protected override void UnloadContent()
@@ -34,6 +37,10 @@ namespace ElevatorSimulator
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            InputManager.UpdateBefore(gameTime);
+            Screens.ScreenManager.Update(gameTime);
+            InputManager.UpdateAfter(gameTime);
+
             base.Update(gameTime);
         }
         
@@ -42,6 +49,11 @@ namespace ElevatorSimulator
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
+            Screens.ScreenManager.Draw(spriteBatch);
+            if(InputManager.Mode == InputManager.InputMode.Mouse)
+            {
+                spriteBatch.DrawString(Screens.Ui.FontManager.MenuFont, "x", new Vector2(InputManager.CurrentMouseState.X - 10, InputManager.CurrentMouseState.Y - 10), Color.White);
+            }
             spriteBatch.End();
 
             base.Draw(gameTime);

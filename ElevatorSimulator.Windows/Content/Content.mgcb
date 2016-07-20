@@ -13,9 +13,14 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin HeadlineFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:HeadlineFont.spritefont
+
 #begin MenuFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:TextureFormat=Compressed
 /build:MenuFont.spritefont
-
