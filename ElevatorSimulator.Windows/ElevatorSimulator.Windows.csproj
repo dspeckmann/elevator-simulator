@@ -43,17 +43,24 @@
     <Compile Include="InputManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameProgress.cs" />
+    <Compile Include="Screens\CreditsScreen.cs" />
+    <Compile Include="Screens\GameScreen.cs" />
+    <Compile Include="Screens\PauseScreen.cs" />
+    <Compile Include="Screens\ProgressScreen.cs" />
     <Compile Include="Screens\SettingsMenuScreen.cs" />
     <Compile Include="Screens\MainMenuScreen.cs" />
     <Compile Include="Screens\Screen.cs" />
     <Compile Include="Screens\ScreenManager.cs" />
-    <Compile Include="Screens\Ui\Button.cs" />
-    <Compile Include="Screens\Ui\Container.cs" />
-    <Compile Include="Screens\Ui\FontManager.cs" />
-    <Compile Include="Screens\Ui\Label.cs" />
-    <Compile Include="Screens\Ui\MenuList.cs" />
-    <Compile Include="Screens\Ui\ComponentList.cs" />
-    <Compile Include="Screens\Ui\IComponent.cs" />
+    <Compile Include="Screens\UpgradeScreen.cs" />
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="Ui\Button.cs" />
+    <Compile Include="Ui\Container.cs" />
+    <Compile Include="Ui\FontManager.cs" />
+    <Compile Include="Ui\Label.cs" />
+    <Compile Include="Ui\MenuList.cs" />
+    <Compile Include="Ui\ComponentList.cs" />
+    <Compile Include="Ui\IComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
